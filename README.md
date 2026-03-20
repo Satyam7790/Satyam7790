@@ -1,7 +1,9 @@
 # Hi there 👋 I'm [Satyam Raj]
 
 💻 Aspiring Developer  
+
 🚀 Currently learning: Web Dev / DSA  /Game Dev
+
 📫 Reach me: satyam75689@gmail.com
 
 ---
@@ -12,5 +14,11 @@
 - Tools: Git, VS Code
 
 ---
+
+## 📊 GitHub Stats 
+
+![Stats](https://github-readme-stats.vercel.app/api?username=Satyam7790&show_icons=true&theme=tokyonight)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Satyam7790&layout=compact)
 
 
