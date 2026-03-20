@@ -1,16 +1,16 @@
-## Hi there 👋
+# Hi there 👋 I'm [Satyam Raj]
 
-<!--
-**Satyam7790/Satyam7790** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+💻 Aspiring Developer  
+🚀 Currently learning: Web Dev / DSA  /Game Dev
+📫 Reach me: satyam75689@gmail.com
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🚀 Tech Stack
+- Languages: Python , JavaScript , Java
+- Frontend: HTML, CSS, React 
+- Tools: Git, VS Code
+
+---
+
+
