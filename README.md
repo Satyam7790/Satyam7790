@@ -1,4 +1,4 @@
-# Hi there 👋 I'm [Satyam Raj]
+# Hi there 👋 I'm Satyam Raj
 
 💻 Aspiring Developer  
 
