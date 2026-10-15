@@ -4,7 +4,7 @@
 
 🚀 Currently learning: Web Dev / DSA  /Game Dev
 
-📫 Reach me: satyam75689@gmail.com
+📫 Reach me: satyam8802@gmail.com
 
 ---
 
