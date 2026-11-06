@@ -1,7 +1,7 @@
 # Hi there 👋 I'm Satyam Raj
 
 <p align="center">
-  <img src="https://media2.giphy.com/media/kKRmK1hUQvvgS79yB3/giphy.gif" width="400" alt="Hanging On">
+  <img src="[https://media2.giphy.com/media/kKRmK1hUQvvgS79yB3/giphy.gif](https://giphy.com/gifs/dance-memphis-phonk-7SN7VRxzzcby9nyKJV)" width="400" alt="Hanging On">
 </p>
 
 🚀 Currently learning: Web Dev / DSA  /Game Dev
