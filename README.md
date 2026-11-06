@@ -20,11 +20,6 @@
          ![VS_Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
          ![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white)
 
----
-
-## 📊 GitHub Stats 
-
-![Stats](https://github-readme-stats.vercel.app/api?username=Satyam7790&show_icons=true&theme=tokyonight)
 
 
 
