@@ -1,5 +1,9 @@
 # Hi there 👋 I'm Satyam Raj
- 
+
+ #<p align="center">
+  <img src="DIRECT_GIF_URL" width="400">
+#</p> 
+
 🚀 Currently learning: Web Dev / DSA  /Game Dev
 
 📫 Reach me: satyam77708@gmail.com
