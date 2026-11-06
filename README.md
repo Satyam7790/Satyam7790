@@ -1,10 +1,8 @@
 # Hi there 👋 I'm Satyam Raj
-
-💻 Aspiring Developer  
-
+ 
 🚀 Currently learning: Web Dev / DSA  /Game Dev
 
-📫 Reach me: satyam8802@gmail.com
+📫 Reach me: satyam77708@gmail.com
 
 ---
 
