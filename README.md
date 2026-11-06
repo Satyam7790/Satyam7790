@@ -1,7 +1,7 @@
 # Hi there 👋 I'm Satyam Raj
 
 <p align="center">
-  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWV2amdwcjBucWpseTA1amk5cjV2NThlNGY0bHN3a2Z1MDE2ODVpMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7SN7VRxzzcby9nyKJV/giphy.gif">
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWV2amdwcjBucWpseTA1amk5cjV2NThlNGY0bHN3a2Z1MDE2ODVpMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7SN7VRxzzcby9nyKJV/giphy.gif](https://giphy.com/gifs/digital-imposter-1mposter-kKRmK1hUQvvgS79yB3)">
 </p>
 
 🚀 Currently learning: Web Dev / DSA  /Game Dev
