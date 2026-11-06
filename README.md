@@ -1,8 +1,8 @@
 # Hi there 👋 I'm Satyam Raj
 
- #<p align="center">
-  <img src="[DIRECT_GIF_URL](https://giphy.com/gifs/digital-imposter-1mposter-kKRmK1hUQvvgS79yB3)" width="400">
-#</p> 
+<p align="center">
+  <img src="https://media2.giphy.com/media/kKRmK1hUQvvgS79yB3/giphy.gif" width="400" alt="Hanging On">
+</p>
 
 🚀 Currently learning: Web Dev / DSA  /Game Dev
 
