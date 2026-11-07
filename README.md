@@ -1,14 +1,10 @@
 # Hi there 👋 I'm Satyam Raj
 
 <p align="center">
-  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGJzOWVha3E1MmkxdWRoczYxOG85emVlOWVyamp6Zm1paXg4dmt4OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kKRmK1hUQvvgS79yB3/giphy.gif" width="150" alt="Hanging On">
-</p>
-
-<p align="center">
   <img
-    src="./animegifs.gif"
+    src="./anime%20gifs.gif"
     width="400"
-    alt="Animation"
+    alt="Anime GIF"
   />
 </p>
 
