@@ -4,7 +4,7 @@
   <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGJzOWVha3E1MmkxdWRoczYxOG85emVlOWVyamp6Zm1paXg4dmt4OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kKRmK1hUQvvgS79yB3/giphy.gif" width="150" alt="Hanging On">
 </p>
 
-🚀 Currently learning: Web Dev / DSA  /Game Dev
+🚀 Currently learning: Full Stack / DSA  /Game Dev
 
 📫 Reach me: satyam77708@gmail.com
 
@@ -25,6 +25,4 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white)
 
-
-[![GitHub Streak](https://streak-stats.demolab.com/?user=Satyam7790)](https://git.io/streak-stats)
 
