@@ -1,6 +1,6 @@
 # Hi there 👋 I'm Satyam Raj
 
-<p align="center">
+<p >
   <img
     src="./anime%20gifs.gif"
     width="500"
