@@ -3,7 +3,7 @@
 <p align="center">
   <img
     src="./anime%20gifs.gif"
-    width="600"
+    width="700"
     alt="Anime GIF"
   />
 </p>
