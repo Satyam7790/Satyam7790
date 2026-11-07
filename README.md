@@ -26,5 +26,5 @@
 ![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white)
 
 
-
+[![GitHub Streak](https://streak-stats.demolab.com/?user=Satyam7790)](https://git.io/streak-stats)
 
