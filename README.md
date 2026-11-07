@@ -4,6 +4,7 @@
   <img
     src="./anime%20gifs.gif"
     width="700"
+    height = "500"
     alt="Anime GIF"
   />
 </p>
