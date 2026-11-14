@@ -107,60 +107,145 @@ function escapeXml(value) {
 // Generate the SVG image.
 function generateSVG(languages, repositoryCount) {
   const width = 760;
-  const rowHeight = 56;
-  const height = 145 + languages.length * rowHeight;
+  const rowHeight = 42;
+  const height = Math.max(360, 150 + languages.length * rowHeight);
 
-  const rows = languages.map((language, index) => {
-    const y = 104 + index * rowHeight;
-    const color = colors[language.name] || "#8b949e";
-    const barWidth = Math.max(
-      2,
-      (language.percentage / 100) * 704
-    );
+  const cx = 190;
+  const cy = height / 2 + 15;
+  const radius = Math.min(130, (height - 110) / 2);
+
+  const extraColors = [
+    "#58a6ff",
+    "#f778ba",
+    "#3fb950",
+    "#d29922",
+    "#a371f7",
+    "#39c5cf",
+    "#ff7b72",
+    "#8b949e",
+  ];
+
+  let currentAngle = -Math.PI / 2;
+
+  // Generate pie chart slices
+  const slices = languages.map((language, index) => {
+    const startAngle = currentAngle;
+
+    currentAngle += (language.percentage / 100) * Math.PI * 2;
+
+    const endAngle = currentAngle;
+
+    const color =
+      colors[language.name] ||
+      extraColors[index % extraColors.length];
+
+    // Handle a single-language repository collection
+    if (languages.length === 1) {
+      return `<circle cx="${cx}" cy="${cy}" r="${radius}" fill="${color}"/>`;
+    }
+
+    const x1 = cx + radius * Math.cos(startAngle);
+    const y1 = cy + radius * Math.sin(startAngle);
+
+    const x2 = cx + radius * Math.cos(endAngle);
+    const y2 = cy + radius * Math.sin(endAngle);
+
+    const largeArc = endAngle - startAngle > Math.PI ? 1 : 0;
 
     return `
-      <text x="28" y="${y}" fill="#e6edf3"
-        font-size="17" font-weight="600"
-        font-family="Arial, sans-serif">
+      <path
+        d="
+          M ${cx} ${cy}
+          L ${x1} ${y1}
+          A ${radius} ${radius} 0 ${largeArc} 1 ${x2} ${y2}
+          Z
+        "
+        fill="${color}"
+        stroke="#0d1117"
+        stroke-width="2"
+      />
+    `;
+  }).join("");
+
+  // Generate the language legend
+  const legendStartY =
+    cy - ((languages.length - 1) * rowHeight) / 2;
+
+  const legend = languages.map((language, index) => {
+    const y = legendStartY + index * rowHeight;
+
+    const color =
+      colors[language.name] ||
+      extraColors[index % extraColors.length];
+
+    return `
+      <circle cx="385" cy="${y - 5}" r="6" fill="${color}"/>
+
+      <text
+        x="402"
+        y="${y}"
+        fill="#e6edf3"
+        font-size="16"
+        font-weight="600"
+        font-family="Arial, sans-serif"
+      >
         ${escapeXml(language.name)}
       </text>
 
-      <text x="732" y="${y}" fill="#c9d1d9"
-        font-size="16" text-anchor="end"
-        font-family="Arial, sans-serif">
+      <text
+        x="730"
+        y="${y}"
+        fill="#c9d1d9"
+        font-size="16"
+        text-anchor="end"
+        font-family="Arial, sans-serif"
+      >
         ${language.percentage.toFixed(1)}%
       </text>
-
-      <rect x="28" y="${y + 10}" width="704" height="9"
-        rx="5" fill="#30363d"/>
-
-      <rect x="28" y="${y + 10}" width="${barWidth}"
-        height="9" rx="5" fill="${color}"/>
     `;
   }).join("");
 
   return `
-  <svg xmlns="http://www.w3.org/2000/svg"
-    width="${width}" height="${height}"
-    viewBox="0 0 ${width} ${height}">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="${width}"
+      height="${height}"
+      viewBox="0 0 ${width} ${height}"
+    >
+      <rect
+        width="100%"
+        height="100%"
+        rx="16"
+        fill="#0d1117"
+      />
 
-    <rect width="100%" height="100%" rx="16"
-      fill="#0d1117"/>
+      <text
+        x="28"
+        y="40"
+        fill="#f0f6fc"
+        font-size="23"
+        font-weight="bold"
+        font-family="Arial, sans-serif"
+      >
+        Favourite Languages
+      </text>
 
-    <text x="28" y="40" fill="#f0f6fc"
-      font-size="23" font-weight="bold"
-      font-family="Arial, sans-serif">
-      Favourite Languages
-    </text>
+      <text
+        x="28"
+        y="65"
+        fill="#8b949e"
+        font-size="13"
+        font-family="Arial, sans-serif"
+      >
+        Based on ${repositoryCount} repositories
+      </text>
 
-    <text x="28" y="65" fill="#8b949e"
-      font-size="13" font-family="Arial, sans-serif">
-      Based on ${repositoryCount} repositories
-    </text>
-
-    ${rows}
-  </svg>`;
+      ${slices}
+      ${legend}
+    </svg>
+  `;
 }
+
 
 async function main() {
   console.log(`Fetching repositories for ${USERNAME}...`);

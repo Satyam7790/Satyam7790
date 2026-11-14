@@ -1,128 +1,253 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-    width="760" height="481"
-    viewBox="0 0 760 481">
+<svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="760"
+      height="402"
+      viewBox="0 0 760 402"
+    >
+      <rect
+        width="100%"
+        height="100%"
+        rx="16"
+        fill="#0d1117"
+      />
 
-    <rect width="100%" height="100%" rx="16"
-      fill="#0d1117"/>
+      <text
+        x="28"
+        y="40"
+        fill="#f0f6fc"
+        font-size="23"
+        font-weight="bold"
+        font-family="Arial, sans-serif"
+      >
+        Favourite Languages
+      </text>
 
-    <text x="28" y="40" fill="#f0f6fc"
-      font-size="23" font-weight="bold"
-      font-family="Arial, sans-serif">
-      Favourite Languages
-    </text>
+      <text
+        x="28"
+        y="65"
+        fill="#8b949e"
+        font-size="13"
+        font-family="Arial, sans-serif"
+      >
+        Based on 21 repositories
+      </text>
 
-    <text x="28" y="65" fill="#8b949e"
-      font-size="13" font-family="Arial, sans-serif">
-      Based on 21 repositories
-    </text>
-
+      
+      <path
+        d="
+          M 190 216
+          L 190 86
+          A 130 130 0 1 1 167.2820074753622 343.99958131045
+          Z
+        "
+        fill="#3178c6"
+        stroke="#0d1117"
+        stroke-width="2"
+      />
     
-      <text x="28" y="104" fill="#e6edf3"
-        font-size="17" font-weight="600"
-        font-family="Arial, sans-serif">
+      <path
+        d="
+          M 190 216
+          L 167.2820074753622 343.99958131045
+          A 130 130 0 0 1 60.97699993279397 231.90803110563203
+          Z
+        "
+        fill="#f1e05a"
+        stroke="#0d1117"
+        stroke-width="2"
+      />
+    
+      <path
+        d="
+          M 190 216
+          L 60.97699993279397 231.90803110563203
+          A 130 130 0 0 1 97.88523712652669 124.2673969585307
+          Z
+        "
+        fill="#e34c26"
+        stroke="#0d1117"
+        stroke-width="2"
+      />
+    
+      <path
+        d="
+          M 190 216
+          L 97.88523712652669 124.2673969585307
+          A 130 130 0 0 1 166.55266236354188 88.13201198985755
+          Z
+        "
+        fill="#563d7c"
+        stroke="#0d1117"
+        stroke-width="2"
+      />
+    
+      <path
+        d="
+          M 190 216
+          L 166.55266236354188 88.13201198985755
+          A 130 130 0 0 1 179.93601436997844 86.39013851855748
+          Z
+        "
+        fill="#dea584"
+        stroke="#0d1117"
+        stroke-width="2"
+      />
+    
+      <path
+        d="
+          M 190 216
+          L 179.93601436997844 86.39013851855748
+          A 130 130 0 0 1 189.99999999999997 86
+          Z
+        "
+        fill="#3572A5"
+        stroke="#0d1117"
+        stroke-width="2"
+      />
+    
+      
+      <circle cx="385" cy="106" r="6" fill="#3178c6"/>
+
+      <text
+        x="402"
+        y="111"
+        fill="#e6edf3"
+        font-size="16"
+        font-weight="600"
+        font-family="Arial, sans-serif"
+      >
         TypeScript
       </text>
 
-      <text x="732" y="104" fill="#c9d1d9"
-        font-size="16" text-anchor="end"
-        font-family="Arial, sans-serif">
-        53.1%
+      <text
+        x="730"
+        y="111"
+        fill="#c9d1d9"
+        font-size="16"
+        text-anchor="end"
+        font-family="Arial, sans-serif"
+      >
+        52.8%
       </text>
-
-      <rect x="28" y="114" width="704" height="9"
-        rx="5" fill="#30363d"/>
-
-      <rect x="28" y="114" width="373.5142018005797"
-        height="9" rx="5" fill="#3178c6"/>
     
-      <text x="28" y="160" fill="#e6edf3"
-        font-size="17" font-weight="600"
-        font-family="Arial, sans-serif">
+      <circle cx="385" cy="148" r="6" fill="#f1e05a"/>
+
+      <text
+        x="402"
+        y="153"
+        fill="#e6edf3"
+        font-size="16"
+        font-weight="600"
+        font-family="Arial, sans-serif"
+      >
         JavaScript
       </text>
 
-      <text x="732" y="160" fill="#c9d1d9"
-        font-size="16" text-anchor="end"
-        font-family="Arial, sans-serif">
-        19.9%
+      <text
+        x="730"
+        y="153"
+        fill="#c9d1d9"
+        font-size="16"
+        text-anchor="end"
+        font-family="Arial, sans-serif"
+      >
+        20.3%
       </text>
-
-      <rect x="28" y="170" width="704" height="9"
-        rx="5" fill="#30363d"/>
-
-      <rect x="28" y="170" width="139.80477296528306"
-        height="9" rx="5" fill="#f1e05a"/>
     
-      <text x="28" y="216" fill="#e6edf3"
-        font-size="17" font-weight="600"
-        font-family="Arial, sans-serif">
+      <circle cx="385" cy="190" r="6" fill="#e34c26"/>
+
+      <text
+        x="402"
+        y="195"
+        fill="#e6edf3"
+        font-size="16"
+        font-weight="600"
+        font-family="Arial, sans-serif"
+      >
         HTML
       </text>
 
-      <text x="732" y="216" fill="#c9d1d9"
-        font-size="16" text-anchor="end"
-        font-family="Arial, sans-serif">
-        14.5%
+      <text
+        x="730"
+        y="195"
+        fill="#c9d1d9"
+        font-size="16"
+        text-anchor="end"
+        font-family="Arial, sans-serif"
+      >
+        14.4%
       </text>
-
-      <rect x="28" y="226" width="704" height="9"
-        rx="5" fill="#30363d"/>
-
-      <rect x="28" y="226" width="102.0130233827949"
-        height="9" rx="5" fill="#e34c26"/>
     
-      <text x="28" y="272" fill="#e6edf3"
-        font-size="17" font-weight="600"
-        font-family="Arial, sans-serif">
+      <circle cx="385" cy="232" r="6" fill="#563d7c"/>
+
+      <text
+        x="402"
+        y="237"
+        fill="#e6edf3"
+        font-size="16"
+        font-weight="600"
+        font-family="Arial, sans-serif"
+      >
         CSS
       </text>
 
-      <text x="732" y="272" fill="#c9d1d9"
-        font-size="16" text-anchor="end"
-        font-family="Arial, sans-serif">
-        9.7%
+      <text
+        x="730"
+        y="237"
+        fill="#c9d1d9"
+        font-size="16"
+        text-anchor="end"
+        font-family="Arial, sans-serif"
+      >
+        9.6%
       </text>
-
-      <rect x="28" y="282" width="704" height="9"
-        rx="5" fill="#30363d"/>
-
-      <rect x="28" y="282" width="68.24767889021838"
-        height="9" rx="5" fill="#563d7c"/>
     
-      <text x="28" y="328" fill="#e6edf3"
-        font-size="17" font-weight="600"
-        font-family="Arial, sans-serif">
+      <circle cx="385" cy="274" r="6" fill="#dea584"/>
+
+      <text
+        x="402"
+        y="279"
+        fill="#e6edf3"
+        font-size="16"
+        font-weight="600"
+        font-family="Arial, sans-serif"
+      >
         Rust
       </text>
 
-      <text x="732" y="328" fill="#c9d1d9"
-        font-size="16" text-anchor="end"
-        font-family="Arial, sans-serif">
+      <text
+        x="730"
+        y="279"
+        fill="#c9d1d9"
+        font-size="16"
+        text-anchor="end"
+        font-family="Arial, sans-serif"
+      >
         1.7%
       </text>
-
-      <rect x="28" y="338" width="704" height="9"
-        rx="5" fill="#30363d"/>
-
-      <rect x="28" y="338" width="11.694818587647621"
-        height="9" rx="5" fill="#dea584"/>
     
-      <text x="28" y="384" fill="#e6edf3"
-        font-size="17" font-weight="600"
-        font-family="Arial, sans-serif">
+      <circle cx="385" cy="316" r="6" fill="#3572A5"/>
+
+      <text
+        x="402"
+        y="321"
+        fill="#e6edf3"
+        font-size="16"
+        font-weight="600"
+        font-family="Arial, sans-serif"
+      >
         Python
       </text>
 
-      <text x="732" y="384" fill="#c9d1d9"
-        font-size="16" text-anchor="end"
-        font-family="Arial, sans-serif">
+      <text
+        x="730"
+        y="321"
+        fill="#c9d1d9"
+        font-size="16"
+        text-anchor="end"
+        font-family="Arial, sans-serif"
+      >
         1.2%
       </text>
-
-      <rect x="28" y="394" width="704" height="9"
-        rx="5" fill="#30363d"/>
-
-      <rect x="28" y="394" width="8.725504373476323"
-        height="9" rx="5" fill="#3572A5"/>
     
-  </svg>
+    </svg>
