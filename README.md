@@ -40,7 +40,7 @@
 
 ## 🌐 Favourite Languages
 
-<p align="center">
+<p align="left">
   <img
     height = 300 
     src="./assets/favourite-languages.svg"
