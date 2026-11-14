@@ -252,8 +252,7 @@ async function main() {
   const svg = generateSVG(languages, repositories.length);
 
   const outputPath = path.resolve(
-    "assets",
-    "favourite-languages.svg"
+    "assets"
   );
 
   mkdirSync(path.dirname(outputPath), { recursive: true });
