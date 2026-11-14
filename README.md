@@ -42,7 +42,7 @@
 
 <p align="center">
   <img
-    height = 200 
+    height = 300 
     src="./assets/favourite-languages.svg"
     alt="Favourite Languages Statistics"
     width="100%"
