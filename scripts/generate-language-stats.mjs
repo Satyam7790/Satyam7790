@@ -221,17 +221,6 @@ function generateSVG(languages, repositoryCount) {
 
       <text
         x="28"
-        y="40"
-        fill="#f0f6fc"
-        font-size="23"
-        font-weight="bold"
-        font-family="Arial, sans-serif"
-      >
-        Favourite Languages
-      </text>
-
-      <text
-        x="28"
         y="65"
         fill="#8b949e"
         font-size="13"
