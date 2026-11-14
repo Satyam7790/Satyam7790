@@ -241,9 +241,9 @@ async function main() {
 
   const svg = generateSVG(languages, repositories.length);
 
-  const outputPath = path.resolve(
-    "assets"
-  );
+  // const outputPath = path.resolve(
+  //   "assets"
+  // );
 
   mkdirSync(path.dirname(outputPath), { recursive: true });
   writeFileSync(outputPath, svg.trim());
