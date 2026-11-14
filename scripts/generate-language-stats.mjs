@@ -107,7 +107,7 @@ function escapeXml(value) {
 // Generate the SVG image.
 function generateSVG(languages, repositoryCount) {
   const width = 760;
-  const rowHeight = 42;
+  const rowHeight = 30;
   const height = Math.max(360, 150 + languages.length * rowHeight);
 
   const cx = 190;
