@@ -40,8 +40,9 @@
 
 ## 🌐 Favourite Languages
 
-<p align="left">
+<p align="center">
   <img
+    align ="left"
     height = 300 
     src="./assets/favourite-languages.svg"
     alt="Favourite Languages Statistics"
