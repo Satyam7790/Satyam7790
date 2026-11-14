@@ -36,4 +36,15 @@
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
+---
+
+## 🌐 Favourite Languages
+
+<p align="center">
+  <img
+    src="./assets/favourite-languages.svg"
+    alt="Favourite Languages Statistics"
+    width="100%"
+  />
+</p>
 

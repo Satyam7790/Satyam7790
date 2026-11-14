@@ -1,0 +1,196 @@
+
+import { writeFileSync, mkdirSync } from "node:fs";
+import path from "node:path";
+
+const USERNAME = process.env.GITHUB_USERNAME || "Satyam7790";
+const TOKEN = process.env.GH_TOKEN;
+
+const headers = {
+  Accept: "application/vnd.github+json",
+  "X-GitHub-Api-Version": "2022-11-28",
+};
+
+if (TOKEN) {
+  headers.Authorization = `Bearer ${TOKEN}`;
+}
+
+async function githubFetch(url) {
+  const response = await fetch(url, { headers });
+
+  if (!response.ok) {
+    throw new Error(
+      `GitHub API error ${response.status}: ${await response.text()}`
+    );
+  }
+
+  return response.json();
+}
+
+// Fetch all repositories owned by the user.
+async function getRepositories() {
+  const repositories = [];
+
+  for (let page = 1; ; page++) {
+    const batch = await githubFetch(
+      `https://api.github.com/users/${USERNAME}/repos?type=owner&per_page=100&page=${page}`
+    );
+
+    repositories.push(...batch);
+
+    if (batch.length < 100) break;
+  }
+
+  // Exclude forks and archived repositories.
+  return repositories.filter(
+    (repo) => !repo.fork && !repo.archived
+  );
+}
+
+// Fetch language bytes from every repository.
+async function getLanguageStats(repositories) {
+  const totals = {};
+
+  for (let i = 0; i < repositories.length; i += 5) {
+    const batch = repositories.slice(i, i + 5);
+
+    const results = await Promise.all(
+      batch.map((repo) => githubFetch(repo.languages_url))
+    );
+
+    for (const languages of results) {
+      for (const [language, bytes] of Object.entries(languages)) {
+        totals[language] = (totals[language] || 0) + bytes;
+      }
+    }
+  }
+
+  const totalBytes = Object.values(totals).reduce(
+    (sum, bytes) => sum + bytes,
+    0
+  );
+
+  return Object.entries(totals)
+    .map(([name, bytes]) => ({
+      name,
+      percentage: (bytes / totalBytes) * 100,
+    }))
+    .sort((a, b) => b.percentage - a.percentage);
+}
+
+const colors = {
+  JavaScript: "#f1e05a",
+  TypeScript: "#3178c6",
+  Python: "#3572A5",
+  Java: "#b07219",
+  HTML: "#e34c26",
+  CSS: "#563d7c",
+  "C++": "#f34b7d",
+  C: "#555555",
+  "C#": "#178600",
+  Go: "#00ADD8",
+  Rust: "#dea584",
+  PHP: "#4F5D95",
+  Ruby: "#701516",
+  Shell: "#89e051",
+};
+
+function escapeXml(value) {
+  return value.replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&apos;",
+  })[char]);
+}
+
+// Generate the SVG image.
+function generateSVG(languages, repositoryCount) {
+  const width = 760;
+  const rowHeight = 56;
+  const height = 145 + languages.length * rowHeight;
+
+  const rows = languages.map((language, index) => {
+    const y = 104 + index * rowHeight;
+    const color = colors[language.name] || "#8b949e";
+    const barWidth = Math.max(
+      2,
+      (language.percentage / 100) * 704
+    );
+
+    return `
+      <text x="28" y="${y}" fill="#e6edf3"
+        font-size="17" font-weight="600"
+        font-family="Arial, sans-serif">
+        ${escapeXml(language.name)}
+      </text>
+
+      <text x="732" y="${y}" fill="#c9d1d9"
+        font-size="16" text-anchor="end"
+        font-family="Arial, sans-serif">
+        ${language.percentage.toFixed(1)}%
+      </text>
+
+      <rect x="28" y="${y + 10}" width="704" height="9"
+        rx="5" fill="#30363d"/>
+
+      <rect x="28" y="${y + 10}" width="${barWidth}"
+        height="9" rx="5" fill="${color}"/>
+    `;
+  }).join("");
+
+  return `
+  <svg xmlns="http://www.w3.org/2000/svg"
+    width="${width}" height="${height}"
+    viewBox="0 0 ${width} ${height}">
+
+    <rect width="100%" height="100%" rx="16"
+      fill="#0d1117"/>
+
+    <text x="28" y="40" fill="#f0f6fc"
+      font-size="23" font-weight="bold"
+      font-family="Arial, sans-serif">
+      Favourite Languages
+    </text>
+
+    <text x="28" y="65" fill="#8b949e"
+      font-size="13" font-family="Arial, sans-serif">
+      Based on ${repositoryCount} repositories
+    </text>
+
+    ${rows}
+  </svg>`;
+}
+
+async function main() {
+  console.log(`Fetching repositories for ${USERNAME}...`);
+
+  const repositories = await getRepositories();
+
+  console.log(`Found ${repositories.length} repositories.`);
+
+  const languages = await getLanguageStats(repositories);
+
+  if (languages.length === 0) {
+    throw new Error("No language statistics were found.");
+  }
+
+  const svg = generateSVG(languages, repositories.length);
+
+  const outputPath = path.resolve(
+    "assets",
+    "favourite-languages.svg"
+  );
+
+  mkdirSync(path.dirname(outputPath), { recursive: true });
+  writeFileSync(outputPath, svg.trim());
+
+  console.log("Language statistics generated successfully.");
+
+  console.table(languages);
+}
+
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
