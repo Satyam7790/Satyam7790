@@ -219,16 +219,6 @@ function generateSVG(languages, repositoryCount) {
         fill="#0d1117"
       />
 
-      <text
-        x="28"
-        y="65"
-        fill="#8b949e"
-        font-size="13"
-        font-family="Arial, sans-serif"
-      >
-        Based on ${repositoryCount} repositories
-      </text>
-
       ${slices}
       ${legend}
     </svg>
