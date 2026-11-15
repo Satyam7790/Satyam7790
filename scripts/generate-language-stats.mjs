@@ -106,13 +106,13 @@ function escapeXml(value) {
 
 // Generate the SVG image.
 function generateSVG(languages, repositoryCount) {
-  const width = 760;
+  const width = 680;
   const rowHeight = 30;
   const height = Math.max(280, 110 + languages.length * rowHeight);
 
-  const cx = 190;
-  const cy = height / 2 + 15;
-  const radius = Math.min(130, (height - 110) / 2);
+  const cx = 160;
+  const cy = height / 2 ;
+  const radius = Math.min(145, (height - 60) / 2);
 
   const extraColors = [
     "#58a6ff",
@@ -179,10 +179,10 @@ function generateSVG(languages, repositoryCount) {
       extraColors[index % extraColors.length];
 
     return `
-      <circle cx="385" cy="${y - 5}" r="6" fill="${color}"/>
+      <circle cx="330" cy="${y - 5}" r="6" fill="${color}"/>
 
       <text
-        x="402"
+        x="347"
         y="${y}"
         fill="#e6edf3"
         font-size="16"
@@ -193,7 +193,7 @@ function generateSVG(languages, repositoryCount) {
       </text>
 
       <text
-        x="730"
+        x="650"
         y="${y}"
         fill="#c9d1d9"
         font-size="16"
