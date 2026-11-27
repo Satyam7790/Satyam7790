@@ -1,8 +1,8 @@
 <svg
       xmlns="http://www.w3.org/2000/svg"
       width="680"
-      height="290"
-      viewBox="0 0 680 290"
+      height="320"
+      viewBox="0 0 680 320"
     >
       <rect
         width="100%"
@@ -14,9 +14,9 @@
       
       <path
         d="
-          M 160 145
+          M 160 160
           L 160 30
-          A 115 115 0 0 1 163.10725815380408 259.9580138431663
+          A 130 130 0 0 1 192.4492187823315 285.8850594805292
           Z
         "
         fill="#3178c6"
@@ -26,9 +26,9 @@
     
       <path
         d="
-          M 160 145
-          L 163.10725815380408 259.9580138431663
-          A 115 115 0 0 1 45.07924377982384 149.2684645697067
+          M 160 160
+          L 192.4492187823315 285.8850594805292
+          A 130 130 0 0 1 39.046060508974534 207.64603363976218
           Z
         "
         fill="#f1e05a"
@@ -38,9 +38,9 @@
     
       <path
         d="
-          M 160 145
-          L 45.07924377982384 149.2684645697067
-          A 115 115 0 0 1 81.21735773183154 61.22473349940451
+          M 160 160
+          L 39.046060508974534 207.64603363976218
+          A 130 130 0 0 1 41.10135008103627 107.43469730470767
           Z
         "
         fill="#e34c26"
@@ -50,9 +50,9 @@
     
       <path
         d="
-          M 160 145
-          L 81.21735773183154 61.22473349940451
-          A 115 115 0 0 1 138.77745853434635 31.975207437754563
+          M 160 160
+          L 41.10135008103627 107.43469730470767
+          A 130 130 0 0 1 83.76870431066067 54.6966783167572
           Z
         "
         fill="#563d7c"
@@ -62,9 +62,21 @@
     
       <path
         d="
-          M 160 145
-          L 138.77745853434635 31.975207437754563
-          A 115 115 0 0 1 151.45064558899907 30.31822926395364
+          M 160 160
+          L 83.76870431066067 54.6966783167572
+          A 130 130 0 0 1 145.52671898278405 30.80818858535693
+          Z
+        "
+        fill="#3572A5"
+        stroke="#0d1117"
+        stroke-width="2"
+      />
+    
+      <path
+        d="
+          M 160 160
+          L 145.52671898278405 30.80818858535693
+          A 130 130 0 0 1 158.90678807607506 30.004596667076783
           Z
         "
         fill="#dea584"
@@ -74,12 +86,12 @@
     
       <path
         d="
-          M 160 145
-          L 151.45064558899907 30.31822926395364
-          A 115 115 0 0 1 159.9999999999999 30
+          M 160 160
+          L 158.90678807607506 30.004596667076783
+          A 130 130 0 0 1 160.00000000000009 30
           Z
         "
-        fill="#3572A5"
+        fill="#89e051"
         stroke="#0d1117"
         stroke-width="2"
       />
@@ -106,7 +118,7 @@
         text-anchor="end"
         font-family="Arial, sans-serif"
       >
-        49.6%
+        46.0%
       </text>
     
       <circle cx="330" cy="95" r="6" fill="#f1e05a"/>
@@ -130,7 +142,7 @@
         text-anchor="end"
         font-family="Arial, sans-serif"
       >
-        24.8%
+        23.0%
       </text>
     
       <circle cx="330" cy="125" r="6" fill="#e34c26"/>
@@ -154,7 +166,7 @@
         text-anchor="end"
         font-family="Arial, sans-serif"
       >
-        13.6%
+        12.6%
       </text>
     
       <circle cx="330" cy="155" r="6" fill="#563d7c"/>
@@ -178,38 +190,14 @@
         text-anchor="end"
         font-family="Arial, sans-serif"
       >
-        9.1%
+        8.4%
       </text>
     
-      <circle cx="330" cy="185" r="6" fill="#dea584"/>
+      <circle cx="330" cy="185" r="6" fill="#3572A5"/>
 
       <text
         x="347"
         y="190"
-        fill="#e6edf3"
-        font-size="16"
-        font-weight="600"
-        font-family="Arial, sans-serif"
-      >
-        Rust
-      </text>
-
-      <text
-        x="650"
-        y="190"
-        fill="#c9d1d9"
-        font-size="16"
-        text-anchor="end"
-        font-family="Arial, sans-serif"
-      >
-        1.8%
-      </text>
-    
-      <circle cx="330" cy="215" r="6" fill="#3572A5"/>
-
-      <text
-        x="347"
-        y="220"
         fill="#e6edf3"
         font-size="16"
         font-weight="600"
@@ -220,13 +208,61 @@
 
       <text
         x="650"
+        y="190"
+        fill="#c9d1d9"
+        font-size="16"
+        text-anchor="end"
+        font-family="Arial, sans-serif"
+      >
+        8.2%
+      </text>
+    
+      <circle cx="330" cy="215" r="6" fill="#dea584"/>
+
+      <text
+        x="347"
+        y="220"
+        fill="#e6edf3"
+        font-size="16"
+        font-weight="600"
+        font-family="Arial, sans-serif"
+      >
+        Rust
+      </text>
+
+      <text
+        x="650"
         y="220"
         fill="#c9d1d9"
         font-size="16"
         text-anchor="end"
         font-family="Arial, sans-serif"
       >
-        1.2%
+        1.6%
+      </text>
+    
+      <circle cx="330" cy="245" r="6" fill="#89e051"/>
+
+      <text
+        x="347"
+        y="250"
+        fill="#e6edf3"
+        font-size="16"
+        font-weight="600"
+        font-family="Arial, sans-serif"
+      >
+        Shell
+      </text>
+
+      <text
+        x="650"
+        y="250"
+        fill="#c9d1d9"
+        font-size="16"
+        text-anchor="end"
+        font-family="Arial, sans-serif"
+      >
+        0.1%
       </text>
     
     </svg>
